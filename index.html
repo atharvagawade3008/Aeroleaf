@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroLeaf | Smart Air Purifying Plant</title>
+    <meta name="description"
+        content="AeroLeaf is a smart indoor plant that purifies air and glows softly based on air quality. Minimal futuristic design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">AeroLeaf</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it Works</a>
+        </div>
+        <button class="btn nav-btn">Pre-order</button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content fade-in">
+            <h1>Breathe <span class="glow-text">Purer</span><br>Live Better.</h1>
+            <p>Meet AeroLeaf. The world's first smart indoor plant that naturally purifies your air and reacts to air
+                quality with a soft ambient glow.</p>
+            <div class="hero-actions">
+                <a href="discover.html" class="btn primary-btn"
+                    style="text-decoration: none; display: flex; align-items: center; justify-content: center;">Discover
+                    AeroLeaf</a>
+                <button class="btn secondary-btn" id="watchVideoBtn">Watch Video</button>
+            </div>
+        </div>
+        <div class="hero-image fade-in delay-1">
+            <img src="aeroleaf_product.png" alt="AeroLeaf Glowing Plant" id="main-product-img">
+            <div class="glow-backdrop"></div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <h2 class="section-title fade-in">Intelligent Nature</h2>
+        <div class="feature-grid">
+            <div class="feature-card fade-in delay-1">
+                <div class="icon">✨</div>
+                <h3>Bio-Filtration</h3>
+                <p>Advanced root-system technology removes 99% of airborne toxins and VOCs naturally.</p>
+            </div>
+            <div class="feature-card fade-in delay-2">
+                <div class="icon">🌿</div>
+                <h3>Ambient Feedback</h3>
+                <p>Soft bioluminescent glow indicates your room's air quality in real-time. Green for pure, cyan for
+                    cleaning.</p>
+            </div>
+            <div class="feature-card fade-in delay-3">
+                <div class="icon">📱</div>
+                <h3>Smart Sync</h3>
+                <p>Monitor air quality, plant health, and water levels directly from the iOS and Android app.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2 class="section-title fade-in">How It Works</h2>
+        <div class="steps-container">
+            <div class="step fade-in delay-1">
+                <div class="step-number">01</div>
+                <h3>Plug & Play</h3>
+                <p>Simply place AeroLeaf in your room, add water to the reservoir, and plug it in.</p>
+            </div>
+            <div class="step fade-in delay-2">
+                <div class="step-number">02</div>
+                <h3>Auto-Calibration</h3>
+                <p>The built-in sensors analyze your air quality and adjust the bio-filtration rate automatically.</p>
+            </div>
+            <div class="step fade-in delay-3">
+                <div class="step-number">03</div>
+                <h3>Breathe & Glow</h3>
+                <p>Enjoy pure air while AeroLeaf provides a beautiful, real-time visual indicator of air quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2 class="section-title fade-in">What People Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card fade-in delay-1">
+                <p class="quote">"AeroLeaf completely changed the atmosphere in my apartment. The air feels crisp, and
+                    the glow is so calming at night."</p>
+                <div class="author">- Sarah J., Designer</div>
+            </div>
+            <div class="testimonial-card fade-in delay-2">
+                <p class="quote">"The perfect blend of nature and technology. I love checking the app to see how much
+                    it's purifying."</p>
+                <div class="author">- Mike T., Engineer</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section fade-in">
+        <div class="cta-card">
+            <h2>Ready to transform your space?</h2>
+            <p>Join the waitlist today and get 20% off your active bio-filter companion.</p>
+            <button class="btn primary-btn pulse">Reserve Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">AeroLeaf</div>
+        <p>&copy; 2026 AeroLeaf Bio-Tech. All rights reserved.</p>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-overlay"></div>
+        <div class="video-modal-content">
+            <button class="close-video-btn" aria-label="Close Video">&times;</button>
+            <video id="promoVideo" controls>
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover AeroLeaf | Interactive Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="discover.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="text-decoration: none; color: white;">AeroLeaf</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#interactive-viewer">Experience</a>
+            <a href="#origin">The Origin</a>
+        </div>
+        <button class="btn nav-btn">Pre-order</button>
+    </nav>
+
+    <header class="discover-hero">
+        <div class="hero-content fade-in text-center">
+            <h1>Experience <span class="glow-text">AeroLeaf</span></h1>
+            <p style="margin: 0 auto;">Interact with our 3D hologram. Hover over the glowing hotspots to explore the
+                advanced bio-technology inside every AeroLeaf.</p>
+        </div>
+    </header>
+
+    <section id="interactive-viewer" class="interactive-section">
+        <div class="viewer-container fade-in delay-1">
+            <div class="product-3d-wrapper" id="productWrapper">
+                <img src="aeroleaf_product.png" alt="AeroLeaf Product" class="product-image">
+
+                <!-- Hotspots -->
+                <div class="hotspot" style="top: 25%; left: 55%; transform: translateZ(20px);"
+                    data-title="Bio-Engineered Leaves"
+                    data-info="Specially bred to maximize CO2 absorption and oxygen output.">
+                    <div class="hotspot-core"></div>
+                    <div class="hotspot-ring"></div>
+                </div>
+
+                <div class="hotspot" style="top: 60%; left: 65%; transform: translateZ(-10px);"
+                    data-title="Nano-Porous Soil"
+                    data-info="Filters VOCs and traps harmful airborne particles at the root level.">
+                    <div class="hotspot-core"></div>
+                    <div class="hotspot-ring"></div>
+                </div>
+
+                <div class="hotspot" style="top: 80%; left: 45%; transform: translateZ(40px);" data-title="Smart Base"
+                    data-info="Built-in sensors monitor air quality and water levels, syncing with your app.">
+                    <div class="hotspot-core"></div>
+                    <div class="hotspot-ring"></div>
+                </div>
+            </div>
+
+            <!-- Dynamic Info Display -->
+            <div id="dynamic-info-container" class="dynamic-info-container fade-in delay-2">
+                <h3 id="dynamic-info-title">Interactive Hologram</h3>
+                <p id="dynamic-info-text">Hover over the glowing points while it rotates to reveal its secrets.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="origin" class="origin-section">
+        <div class="origin-content">
+            <h2 class="slide-in-left">The <span class="glow-text">Idea</span></h2>
+            <div class="origin-text slide-in-right delay-1">
+                <p>The concept for AeroLeaf was born in a small apartment in a crowded city. We noticed that despite our
+                    best efforts, the indoor air felt stale, and traditional mechanical purifiers were noisy and
+                    sterile.</p>
+                <p>We asked ourselves: <i>"What if nature could be supercharged by technology?"</i></p>
+                <p>By collaborating with botanists and hardware engineers, we discovered a way to enhance the natural
+                    filtering power of root microbiomes, while providing beautiful, visual feedback. After 4 years of
+                    R&D, AeroLeaf was born—a living, breathing piece of technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">AeroLeaf</div>
+        <p>&copy; 2026 AeroLeaf Bio-Tech. All rights reserved.</p>
+    </footer>
+
+    <script src="discover.js"></script>
+</body>
+
+</html>
